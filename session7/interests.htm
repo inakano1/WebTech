@@ -15,11 +15,31 @@
         .bord2{background-color:orange}
         .bord3{background-color:plum}
         p{font-family:'Dancing Script';font-size:25pt}
+        .NavBar{position:sticky;top:0px;left:0px;width:100%;border:black 3px}
+        .NavBar ul{list-style-type:none;margin:0;padding:0;overflow:auto;background-color: cadetblue;border-radius:5px}
+        .NavBar li{float:left}
+        .NavBar a.Active{background-color: chocolate;}
+        .NavBar li a:hover, .NavBar a.Active:hover{background-color: darkgoldenrod;}
+        .NavBar .dropdown_content{display:none;position:absolute;background-color:orange;z-index:1}
+        .NavBar .dropdown_content a{display:block;text-align: left;}
+        .NavBar li.dropdown:hover .dropdown_content{display:block}
     </style>
     <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
 </head>
 <body>
+    <div class="NavBar">
+        <ul>
+            <li><a href="interests.htm">Home</a></li>
+            <li><a href="index.htm">Index</a></li>
+            <li class="dropdown"><a>Search</a>
+                <div class="dropdown_content">
+                    <a href="http://www.google.com">Google</a>
+                    <a href="http://www.bing.com">Bing</a>
+                </div>
+            </li>
+        </ul>
+    </div>
     <a href="index.htm">index</a>
     <h1>My Interests&trade;</h1>
     <a href="https://inakano1.github.io/WebTech/session4/"></a>

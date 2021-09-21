@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issei Nakano</title>
+    <style>
+        h1{text-align:center;font-family:'Times New Roman', Times, serif;font-size:30pt;color:blue}
+        h1{text-shadow:5px 5px 3px yellowgreen}
+        h1{border:10px;width:auto;height:auto;padding:5px}
+        body{background-color:cornsilk}
+        body{float:left}
+        span{font-variant:small-caps;color:red}
+        .NavBar{position:sticky;top:0px;left:0px;width:100%;border:black 3px}
+        .NavBar ul{list-style-type:none;margin:0;padding:0;overflow:auto;background-color: cadetblue;border-radius:5px}
+        .NavBar li{float:left;font-size:15pt}
+        .NavBar a.Active{background-color: chocolate;}
+        .NavBar li a:hover, .NavBar a.Active:hover{background-color: darkgoldenrod;}
+        .dropdown_content{display:none;position:absolute;background-color:orange;min-width:50px}
+        .NavBar .dropdown_content a{display:block;text-align: left;}
+        .NavBar li.dropdown:hover .dropdown_content{display:block}
+    </style>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+</head>
+<body>
+    <div class="NavBar">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="interests.htm">Index</a></li>
+            <li class="dropdown"><a>Search</a>
+                <div class="dropdown_content">
+                    <a href="http://www.google.com">Google</a>
+                    <a href="http://www.bing.com">Bing</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <a href="interests.htm">interests</a>
+    <h1>Session 1 <i>In Class Activity</i></h1>
+    <hr>
+    <p>My hometown is <span>Kyoto</span>, Japan. <br>The best way to contact me is email: inakano1@babson.edu </p>
+    <hr>
+    <p>Something interesting about myself is that I took a semester of python coding class during my first year, so I think have a basic understanding of code.</p>
+    <hr>
+    <h1 style="border:red; border-style:solid"></h1>
+</body>
+</html>
