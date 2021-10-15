@@ -1,7 +1,7 @@
 body{background-color:lightsteelblue}
 h1{font-size:40pt;text-align:center;}
 h2{font-size:15pt;text-align:center}
-p{text-align:center}
+p{font-size:12pt;text-align:center;line-height:2;margin-left: 50px;margin-right: 50px;}
 .Nav_Bar {position: sticky; top: 0px; left: 0px; width: 100%;}
 .Nav_Bar ul {list-style-type: none; margin: 0; padding:0; overflow: auto; background-color: rgb(80, 80, 80); border-radius: 10px;}
 .Nav_Bar li {float:left;}
@@ -11,3 +11,7 @@ p{text-align:center}
 .Nav_Bar .Dropdown_Content {display: none; position: absolute; background-color: rgb(80, 80, 80); min-width: 100px; z-index: 1; }
 .Nav_Bar .Dropdown_Content a {display: block; text-align: left;}
 .Nav_Bar li.Dropdown:hover .Dropdown_Content {display: block;}
+.center{display: block;margin-left: auto;margin-right: auto;width:50%}
+h3{text-align:center;font-size:10pt;}
+.footer{background-color:gainsboro;}
+h4{text-align:center;font-size:14pt;}
