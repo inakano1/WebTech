@@ -1,0 +1,4 @@
+body{background-color:wheat}
+.main{font-size:15pt}
+.main{color:darkgreen}
+p:first-child:hover::first-letter{font-size:120%}
