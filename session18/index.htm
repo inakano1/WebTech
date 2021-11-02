@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+	<title>Drawing</title>
+	<style>
+        canvas { border: 1px solid black; position:fixed; top:0px; left:100px }
+		div {position:fixed; top:300px}
+	</style>
+	
+	<script>
+
+	var startX;
+	var startY;
+	var begin=true;
+	function draw(p)
+	{
+		if (begin)
+		{
+			begin=false;
+			startX=p.clientX;
+			startY=p.clientY;
+		}
+		else
+		{
+			var canvas = document.getElementById('tutorial');
+			var ctx = canvas.getContext('2d');
+			ctx.beginPath();
+			ctx.moveTo(startX,startY);
+			ctx.arc(p.clientX, p.clientY,50,0,1*Math.PI);
+			startX=p.clientX;
+			startY=p.clientY;
+
+			var mycolor=document.getElementById("c");
+			ctx.fillStyle=mycolor.value
+			ctx.lineWidth=3
+			ctx.fill();
+		}
+	}
+
+	function d()
+	{begin=true}
+	</script>	
+</head>
+<body>
+	<canvas id="tutorial" width="500" height="500" onclick="draw(event)"></canvas>
+	
+	 <div>
+		<p><button type="button" onclick="d()">Water drops</button></p>
+		<p><select name="c" id="c">
+				<option value="blue">blue</option>
+				<option value="cyan">cyan</option>
+				<option value="grey">grey</option>
+		</select></p>
+	 </div>
+	
+</body>
+</html>
