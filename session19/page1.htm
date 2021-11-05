@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+	<title>Page 1</title>
+	
+	<script>
+		var curDate = new Date();  //Sets the date/time when the page loads
+
+		function calcbd()
+		{
+		var y = document.getElementById("yr").value
+		// Get birthday month from the form.  Call it m.
+		var m = document.getElementById("mo").value - 1;  
+		// Get birthday day from the form.  Call it d.
+		var d= document.getElementById("day").value;
+		
+		// Create variable birthday as your birthday this year
+		
+		var birthday = new Date(y,m,d)
+
+		// Calculate how many milliseconds til your birthday this year (negative if birthday is past)
+		var dif = curDate - birthday
+
+		// Convert milliseconds to years.  Dif is how many days to your next birthday
+		dif = dif/(60*60*24*365*1000)
+		// Drop the fraction and add 1 (if there are 0.8 days to your birthday, it is really 1 day)
+		dif = Math.floor(dif);
+		
+		// Put the answer on the page between the <span> and </span>
+		document.getElementById("answer").innerHTML = dif
+		}
+	</script>	
+</head>
+<body>
+	<p>Enter your birthday below</p>
+	<p>Year <input type="text" name="year" id="yr" size="4" />&nbsp;&nbsp;&nbsp;&nbsp;
+		Month <input type="text" name="mo" id="mo" size="2" />&nbsp;&nbsp;&nbsp;&nbsp;
+		Day <input type="text" name="day" id="day" size="2" /></p>
+	<p><button type="button" onclick="calcbd()">Calculate</button></p>
+	<p>Your age: <span id="answer"></span> years old</p>
+	
+</body>
+</html>
