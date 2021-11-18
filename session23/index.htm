@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+	<title>Session 23</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#bt").click(function(){
+        $("#panel").slideDown("slow");
+        });});
+
+        $(document).ready(function(){
+        $("#bt").click(function(){
+        $("#flip").text("You clicked");
+        });});
+
+        $(document).ready(function(){
+        $("#bt").click(function(){
+        $("#bt").append(" <b>The Button</b>.");
+        });});
+
+        $(document).ready(function(){
+        $("#bt2").click(function(){
+        $("#panel").remove();
+        });});
+
+        $(document).ready(function(){
+        $("#bt2").click(function(){
+        $("h1").addClass("header");
+        });});
+
+        $(document).ready(function(){
+        $("#bt2").click(function(){
+        $("#flip").animate({left: '250px'});
+        $("#flip").delay(500).fadeOut();
+    });});
+    </script>
+    <style> 
+
+        #panel, #flip {
+          padding: 5px;
+          text-align: center;
+          background-color: #fce29b;
+          border: solid 3px #080808;
+          width: 800px;
+          position:relative
+        }
+        
+        #panel {
+          padding: 5px;
+          display:none;
+        }
+        .header{font-size: 20pt;color:red}
+        </style>
+</head>
+<body>
+    <h1>Use buttons for animations!</h1>
+	<div id="flip">Slides</div>
+    <div id="panel">Hello!</div>
+
+	<button id="bt">Click</button>
+    <button id="bt2">Remove slide</button>
+</body>
+</html>
