@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CryptoConsultant</title>
+    <title>Credits</title>
     <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
     <style>
         
     </style>
+    <script>
+        function txtcolor()
+        {
+            var colors = new Array("red","yellow","orange","green","blue");
+            document.getElementById("hcode").style.color=colors[Math.floor(Math.random()*colors.length)];
+        }
+    </script>
 </head>
-<body>
+<body onload="txtcolor()">
     <h1>CryptoConsultant</h1>
     <h2>Information platform for cryptocurrencies</h2>
     <div class="Nav_Bar">
@@ -35,9 +42,13 @@
           </ul>
     </div>
     <br><br>
+    <h2>Credits</h2>
     
-    <!--add image (center) and texts-->
+    <p>Images imported from URL</p>
+    <p>Cryptocurrency market charts from: coinmarketcap.com</p>
+    <p>Information source: investopedia.com</p>
     
+    <p>“I have abided by the <span id="hcode">Babson Code of Ethics</span> in this work and pledge to be better than that which would compromise my integrity.”</p>
 
 
     <div class="footer">

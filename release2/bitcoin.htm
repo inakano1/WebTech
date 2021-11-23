@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CryptoConsultant</title>
+    <title>CryptoConsultant Bitcoin</title>
     <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
     <style>
         h4{font-size: 20pt;}
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("button").click(function(){
+        $("#bt").fadeIn("slow");
+        });});
+    </script>
 </head>
 <body>
     <h1>CryptoConsultant</h1>
@@ -46,7 +53,8 @@
         The most recent Bitcoin chart is listed below (from coinmarketcap.com):
     </p>
     <br>
-    <img id="bt" src="btc.jpg" alt="image" class="center">
+    <button>Show Chart</button>
+    <img id="bt" src="btc.jpg" alt="image" class="center" style="display:none">
     <br><br><br>
     <div class="footer">
         <hr>

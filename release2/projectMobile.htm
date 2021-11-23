@@ -1,43 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Comment section:
-Numbered list with sublist is located in the topfive page. 
-Map with hotspot located at topfive page. 
-Video located at the bottom of this page.
-Audio located at the bottom of intro page. 
-
-Javascript functions:
-1. "Crypto" part of title changes color to green when user hovers on it: located on index page's h1 title
-2. "About me" changes to "About Issei" when user clicks that text: located on about page's h4 text
-3. *Could not figure out the form
-4. Image changes in index page when user hovers on it, then returns back when mouse is not on the image anymore: id="pic"
-5. Animation- text size of h4 title increases until 30pt: on intro.htm page
-6. Text color of "Babson code of ethics" change to random colors on load: function in credit.htm page
-
-jQuery functions:
-1. Images hide and show when user clicks buttons: exchange.htm page
-2. Bitcoin chart fades in when user clicks button: bitcoin.htm page
-3. List of top five crypto slides down when user clicks text: topfive.htm page
-4. Text effect changes "Click this text to see list" to "thanks for clicking!" when user clicks text: 
-    topfive page, same text/location as function 3 above
-
-Point recovered from release 1:
-SEO - changed title tags for different pages
-Validation for topfive page - fixed the nesting list error
-
+Mobile Page - See index.htm for project comments
 -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-icon" sizes="128x128" href="icon.png"/>
+
     <title>CryptoConsultant</title>
     <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
-    <script type="text/javascript">
-		var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
-		if (mobile) {document.location="projectMobile.htm"}
-	</script>
     <style>
-        
+        h1, h2, h3, h4{font-weight: normal;}
     </style>
     <script>
         function hover()

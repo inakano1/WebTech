@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CryptoConsultant</title>
+    <title>Crypto Exchanges</title>
     <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
     <style>
         
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#hide").click(function(){$("img").hide();});
+        $("#show").click(function(){$("img").show();});
+        });
+    </script>
 </head>
 <body>
     <h1>CryptoConsultant</h1>
@@ -60,7 +67,9 @@
         Please note that certain exchanges may not be available to use depending on which country you are in. 
     </p>
     
-
+    <h6>Click these buttons to hide/show the exchange logos:</h6>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
     <br><br><br><br>
     <div class="footer">
         <hr>

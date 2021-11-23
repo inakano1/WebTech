@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CryptoConsultant</title>
+    <title>Intro to Cryptocurrencies</title>
     <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
     <style>
         
     </style>
+    <script>
+        var size=10;
+        function txtbig()
+        {
+            size=size+2;
+            document.getElementById("what").style.fontSize=size+"pt";
+            if(size<30)
+            {setTimeout("txtbig()",100)}
+        }
+    </script>
 </head>
-<body>
+<body onload="txtbig()">
     <h1>CryptoConsultant</h1>
     <h2>Information platform for cryptocurrencies</h2>
     <div class="Nav_Bar">
@@ -35,7 +45,7 @@
           </ul>
     </div>
     <br><br>
-    <h4>What are Cryptocurrencies?</h4>
+    <h4 id="what">What are Cryptocurrencies?</h4>
     <p>
         Cryptocurrency is a virtual, digitalized currency that uses blockchain technology to validate transactions and ownerships within the network. 
         Blockchain technology allows the network to distribute an unchangeable ledger that is shared to and contributed by hundreds of thousands of mining computers, or nodes, around the world. 
